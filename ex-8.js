@@ -382,6 +382,7 @@ const totalPaidByLocation = bills.reduce((acc, curr) => {
   }
   return acc;
 }, {});
+
 console.log(totalPaidByLocation);
 
 // let number=[1,2,3,4,5]
