@@ -374,4 +374,39 @@ const bills = [
 ];
 
 // Start coding here
-const billMembers;
+// we need only name of all bills
+// some of name is null  >> we need popout id that is null effected >> the filter 2 time?
+
+//console.log(bills[0].member.name)
+
+/*function fName(b) {
+  return b.filter(oName);
+
+
+function oName(n1) {
+  return n1.member;
+}}
+
+const a1 = fName(bills)
+//console.log(a1)*/
+//--------
+/*
+function filterName(bills) {
+  return bills.filter(onlyName).map(onlyName);
+
+
+function onlyName(name) {
+  return name.member.name;
+} }
+
+
+
+const billMembers = filterName(bills);*/
+
+const billMembers = bills
+  .filter((customerBill) => customerBill.member !== null)
+  .map((customerBill) => customerBill.member.name);
+
+console.log(billMembers);
+
+

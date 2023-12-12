@@ -373,6 +373,19 @@ const bills = [
   },
 ];
 
+//
 // Start coding here
 
-const newBills;
+//console.log(bills[4].member)
+//Objective only show id that not have bills.memeber= null
+// use filter?
+
+function filterBill(bills) {
+  return bills.filter(cutout);
+}
+function cutout(cut) {
+  return cut.member;
+}
+const newBills = filterBill(bills);
+
+console.log(newBills);

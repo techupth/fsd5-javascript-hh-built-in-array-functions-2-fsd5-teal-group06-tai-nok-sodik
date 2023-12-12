@@ -374,4 +374,30 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+//console.log(bills[0].member.name)
+//console.log(bills[1].member.name)
+//console.log(bills[0].member.name)
+// obj > ned name that not stack/dup
+//console.log(bills[0].member)
+/*const totalMembers = bills.filter((customerBill) => customerBill.member !== null);
+const name1 = []
+
+for (let i=0; i<bills.length; i++  ) {
+  if (!name1.includes(totalMembers[i].member.name)) { 
+
+  }
+
+ }
+console.log(totalMembers)*/
+
+const totalMembers = bills.filter(
+  (customerBill) => customerBill.member !== null
+);
+const name1 = [];
+
+for (let i = 0; i < totalMembers.length; i++) {
+  if (!name1.includes(totalMembers[i].member.name)) {
+    name1.push(totalMembers[i].member.name);
+  }
+}
+console.log("Unique Members Count:" + name1.length);

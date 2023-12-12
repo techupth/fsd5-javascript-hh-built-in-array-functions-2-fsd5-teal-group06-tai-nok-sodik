@@ -374,5 +374,22 @@ const bills = [
 ];
 
 // Start coding here
+//console.log(bills[0].total)
+//console.log(bills[0].location)
 
-const totalPaidByLocation;
+/*let a = []
+console.log(a)
+let b = []
+const totalPaidByLocation = a + b ;
+
+for (let i=0; i<bills.length; i++) {
+ return a = bills[i].location
+}
+
+for (let i=0; i<bills.length; i++) {
+    return b = bills[i].total
+   }*/
+   
+
+
+//console.log(totalPaidByLocation)
