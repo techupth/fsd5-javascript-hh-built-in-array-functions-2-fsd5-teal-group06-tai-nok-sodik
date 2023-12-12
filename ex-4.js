@@ -374,4 +374,18 @@ const bills = [
 ];
 
 // Start coding here
-const totalMembers;
+const newBills = bills
+  .filter((bill) => bill.member !== null)
+  .map((bill) => bill.member.name)
+  
+//console.log(newBills);
+
+const totalMembers = [];
+
+for (let i = 0; i < newBills.length; i++) {
+  if (!totalMembers.includes(newBills[i])){
+    totalMembers.push(newBills[i])
+  }
+}
+
+console.log(totalMembers.length);
