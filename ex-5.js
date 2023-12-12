@@ -1,7 +1,23 @@
-let crimeRecordNames = ["Theodora Milenko", "Tinashe Benigno", "Mahalia Priyanka", "Maisy Sudhir"];
+let crimeRecordNames = [
+  "Theodora Milenko",
+  "Tinashe Benigno",
+  "Mahalia Priyanka",
+  "Maisy Sudhir",
+];
 
 function searchCrimeRecord(name) {
   // Start coding here
+  // for (let i = 0; i < crimeRecordNames.length; i++) {
+  //   console.log(name)
+  //   if(name === crimeRecordNames[i]){
+  //     return `${name} has a crime record!!!`
+  //   }
+  // }
+  // return `${name} has no a crime record`
+  let person = crimeRecordNames.includes(name);
+  return person
+    ? `${name} has crime record !!!`
+    : `${name} has no crime record`;
 }
 
 //ผลลัพธ์ที่ควรได้จาก Example case
